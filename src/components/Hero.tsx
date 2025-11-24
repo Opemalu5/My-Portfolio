@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import resumePdf from "@/assets/resume.pdf";
+
 import { Github, Linkedin, Mail, Download } from "lucide-react";
 
 import { ArrowDown } from "lucide-react";
@@ -13,16 +15,12 @@ const Hero = () => {
   };
 
   
-    const handleDownloadResume = () => {
-    // Create a sample resume download link
-    // In production, replace this with your actual resume file
-    const link = document.createElement('a');
-    link.href = '#'; // Replace with actual resume URL
-    link.download = 'Resume.pdf';
-    // For now, show a toast notification
-    alert('Resume download feature - Add your resume file to enable downloads');
-  };
-
+ const handleDownloadResume = () => {
+  const link = document.createElement("a");
+  link.href = resumePdf;
+  link.download = "Diopet-Masca-Resume.pdf";
+  link.click();
+};
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden px-4">
       <div className="absolute inset-0 overflow-hidden">
