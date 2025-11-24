@@ -1,4 +1,4 @@
-import profilePhoto from "@/assets/profile.jpg";
+import profilePhoto from "@/assets/profile.png";
 
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
@@ -79,12 +79,12 @@ const skills = [
             <div className="order-1 md:order-2 relative">
               <div className="relative">
                 {/* Circular profile photo */}
-                <div className="relative ml-auto w-64 h-64 md:w-80 md:h-80">
+                <div className="relative">
                   {/* Gradient blob behind matching hero glow */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary via-accent to-primary rounded-full blur-2xl opacity-30 animate-glow"></div>
+                  {/* <div className="absolute inset-0 bg-gradient-to-br from-primary via-accent to-primary rounded-full blur-2xl opacity-30 animate-glow"></div> */}
                   
                   {/* Main photo circle */}
-                  <div className="relative w-full h-full rounded-full w-200 h-200 overflow-hidden border-4 border-primary/30 shadow-elegant z-10 ring-4 ring-primary/10">
+                  <div className="relative w-full h-full rounded-full w-200 h-200 ">
                     <img 
                       src={profilePhoto} 
                       alt="Diopet C. Mascariña" 
