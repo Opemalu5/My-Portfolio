@@ -41,8 +41,8 @@ const WorkExperience = () => {
   return (
     <section id="experience" className="section-padding bg-gradient-subtle">
       <div className="container mx-auto px-4">
-        <div className="mb-16 text-center animate-fade-in">
-          <h2 className="mb-4 text-4xl font-bold text-gradient md:text-5xl gradient-text glow-text">
+        <div className="mb-14 text-center animate-fade-in">
+          <h2 className="mb-4 text-5xl font-bold text-gradient md:text-5xl gradient-text glow-text">
             Work Experience
           </h2>
           <p className="mx-auto max-w-2xl text-muted-foreground">
@@ -50,11 +50,11 @@ const WorkExperience = () => {
           </p>
         </div>
 
-        <div className="relative mx-auto max-w-5xl">
+        <div className="relative mx-auto max-w-7xl">
           {/* Timeline center line */}
           <div className="absolute left-1/2 top-0 hidden h-full w-0.5 -translate-x-1/2 bg-gradient-to-b from-primary via-accent to-primary md:block" />
 
-          <div className="space-y-12">
+          <div className="space-y-15">
             {experiences.map((exp, index) => (
               <div
                 key={index}
@@ -67,8 +67,8 @@ const WorkExperience = () => {
                   {/* Content card */}
                   <div className="w-full md:w-5/12">
                     <div className="glass-card group hover:shadow-glow transition-all duration-500 hover:scale-[1.02]">
-                      <div className="mb-4 flex items-start justify-between">
-                        <div className="flex items-center gap-3">
+                      <div className="mb-6 flex items-start justify-between">
+                        <div className="flex items-center gap-10">
                           <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary transition-transform group-hover:scale-110">
                             <Briefcase className="h-6 w-6" />
                           </div>
